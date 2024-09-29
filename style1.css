@@ -1,0 +1,642 @@
+/* General Styles */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; 
+  background-color: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  animation: fadeIn 2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif; 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 15px;
+  position: relative;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease; 
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.left img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.right ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+}
+
+.right ul li a:hover {
+  color: #9c9a9d;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2); 
+}
+
+#canvas-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-overlay img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  color: white;
+  text-align: left;
+  max-width: 500px;
+  margin-left: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+}
+
+/* Welcome Section */
+.welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #EEEEEE;
+}
+.welcome-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.welcome-text h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.welcome-text p {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(92, 91, 91);
+  line-height: 1.6;
+}
+
+.welcome-text .signature {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.welcome-image {
+  flex: 1;
+  text-align: center;
+}
+
+.welcome-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Counters Section */
+.counters-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #D8D9DA; 
+}
+
+.counter-container {
+  display: flex;
+  gap: 30px; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.counter-item {
+  text-align: center;
+  margin: 10px;
+}
+
+.counter {
+  font-size: 3rem; 
+  font-weight: bold;
+}
+
+.counter-item p {
+  margin: 10px 0 0;
+  font-size: 1.2rem; 
+  color: #555;
+}
+
+/* Services Section */
+.services {
+  background-color: #ffffff; 
+  color: rgb(116, 110, 110);
+  padding: 50px 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.services-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.services-header h2 {
+  color: #000000;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.services-header p {
+  font-size: 1.1em;
+  max-width: 600px;
+}
+
+/* Slider Container Styles */
+.services-slider-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden; 
+  margin: 20px auto;
+}
+
+/* Slider Styles */
+.services-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; 
+  width: 300%; 
+}
+
+
+.service-item {
+  min-width: 100%; 
+  background-color: rgba(0, 0, 0, 0.05); 
+  color: #000000;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  flex: 1;
+  font-family: 'Times New Roman', Times, serif;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Required for the hover effect */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease; 
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(92, 91, 91);
+}
+
+.service-item a {
+  color: #6a6666;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; 
+}
+.service-item a:hover {
+  text-decoration: underline;
+  color: #797f86; 
+}
+
+/* Hover Effects */
+.service-item:hover {
+  background-color: #000000; 
+  color: #ffffff; 
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.service-item:hover img {
+  transform: scale(1.05); 
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.contact {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 40px;
+  background-color: #ffffff;
+  overflow: hidden; 
+}
+
+.contact-overlay {
+  position: absolute; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.contact-content {
+  position: relative; 
+  z-index: 2; 
+  color: white; 
+  text-align: center; 
+  max-width: 500px;
+  padding: 20px;
+}
+
+.contact-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.contact-content button{
+  background-color: #1f1e1e;
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+}
+.contact-content button:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 12px;
+}
+
+.contact-content button a{
+  text-decoration: none;
+  color: #f8f9fa;
+}
+.map{
+  padding: auto;
+  margin: auto;
+  
+}
+.map h1{
+  text-align: center;
+  font-size: 1.9rem;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #f8f8f8;
+  text-decoration: none;
+  margin: 0 12px;
+  padding: 4px 8px;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 4px;
+}
+
+footer a:hover {
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+@media (min-width: 1600px) {
+  .hero-content {
+    margin-left: 120px;
+    margin-right: 120px;
+    max-width: 60%;
+  }
+
+  .welcome-section {
+    padding: 80px;
+  }
+
+  .services-slider {
+    width: 300%;
+  }
+}
+
+/* For large screens (1200px to 1599px) */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .hero-content {
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 70%;
+  }
+
+  .welcome-section {
+    padding: 60px;
+  }
+
+  .services-slider {
+    width: 250%;
+  }
+}
+
+/* For tablets and larger mobile devices (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .hero-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-content p {
+    font-size: 1.1em;
+  }
+
+  .welcome-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .welcome-text {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .welcome-image {
+    margin-top: 20px;
+  }
+
+  .services-slider {
+    width: 100%;
+  }
+
+  .service-item {
+    min-width: 100%;
+  }
+
+  .counters-section {
+    padding: 20px;
+  }
+
+  .counter-item {
+    margin: 10px 0;
+  }
+
+  .contact-content h2 {
+    font-size: 2em;
+  }
+
+  .contact-content p {
+    font-size: 1em;
+  }
+}
+
+/* For smaller mobile devices (480px to 767px) */
+@media (max-width: 767px) and (min-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .hero-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .welcome-text h1 {
+    font-size: 1.5em;
+  }
+
+  .welcome-text p {
+    font-size: 1em;
+  }
+
+  .services-header h2 {
+    font-size: 1.8em;
+  }
+
+  .services-header p {
+    font-size: 1em;
+  }
+
+  .counters-section {
+    padding: 20px;
+  }
+
+  .counter-item {
+    margin: 10px 0;
+  }
+
+  .contact-content h2 {
+    font-size: 1.8em;
+  }
+
+  .contact-content p {
+    font-size: 0.9em;
+  }
+}
+
+/* For extra-small mobile devices (less than 480px) */
+@media (max-width: 479px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .hero-content {
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8em;
+  }
+
+  .hero-content p {
+    font-size: 0.9em;
+  }
+
+  .welcome-text h1 {
+    font-size: 1.2em;
+  }
+
+  .welcome-text p {
+    font-size: 0.9em;
+  }
+
+  .services-header h2 {
+    font-size: 1.5em;
+  }
+
+  .services-header p {
+    font-size: 0.9em;
+  }
+
+  .counters-section {
+    padding: 10px;
+  }
+
+  .counter-item {
+    margin: 5px 0;
+  }
+
+  .contact-content h2 {
+    font-size: 1.5em;
+  }
+
+  .contact-content p {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<body>
+    
+
+    <header>
+        <nav>
+            <div class="left">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Tracking</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <img src="start2.jpg" alt="Sea and Ocean Delivery">
+            <div class="hero-content">
+                <h1>Infinite Freights Infinite Ways</h1>
+                <p>Connecting the world, one shipment at a time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section" >
+        <div class="welcome-text">
+            <h1>WELCOME TO OUR WEBSITE!</h1>
+            <p>
+               Infinity Freight Services makes business flow. As one of the world's leading non-asset-based
+                supply chain management companies, we design and implement industry-leading solutions in both freight management.
+            </p>
+            <p class="signature">
+                <strong>Dhaval Valia</strong><br>
+                Chairman & Chief Executive Officer
+            </p>
+        </div>
+        <div class="welcome-image" >
+            <canvas id="canvas-image-blending"></canvas>
+            <img src="service.jpg" alt="Welcome Image">
+        </div>
+    </section>
+
+    <!-- Counters Section -->
+    <section class="counters-section">
+        <div class="counter-container">
+          <div class="counter-item">
+            <span class="counter" data-target="10">0</span>
+            <p>Years of Experience</p>
+          </div>
+          <div class="counter-item">
+            <span class="counter" data-target="520">0</span>
+            <p>Projects Completed</p>
+          </div>
+          <div class="counter-item">
+            <span class="counter" data-target="8000">0</span>
+            <p>MTs Air Freight Handled</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="services-header">
+            <h2>Special Services</h2>
+            <p>Globally known for our ability to handle every last detail of our customers’ particular logistics and forwarding needs, TransCargo’s Special Services team takes care of all your logistics.</p>
+        </div>
+        
+        <!-- Slider Container -->
+        <div class="services-slider-container">
+            <button class="slider-btn prev-btn">&#10094;</button> <!-- Previous Button -->
+            
+            <!-- Slider -->
+            <div class="services-slider">
+                <div class="service-item">
+                  <img src="one.jpg" alt="Service 1">
+                  <h3>Packaging and Storage</h3>
+                  <p>Our state-of-the-art packaging solutions ensure your products are protected and preserved during transit, with secure storage options to manage your inventory effectively.</p>
+                  <a href="#">read more →</a>
+                </div>
+                <div class="service-item">
+                  <img src="two.jpg" alt="Service 2">
+                  <h3>Freight Forwarding</h3>
+                  <p>With a global network, we streamline your freight forwarding needs, ensuring timely and efficient delivery across international borders.</p>
+                  <a href="#">read more →</a>
+                </div>
+                <div class="service-item">
+                  <img src="three.jpg" alt="Service 3">
+                  <h3>Supply Chain Management</h3>
+                  <p>Our comprehensive supply chain management solutions optimize your supply chain processes, from procurement to distribution, enhancing efficiency and reducing costs.</p>
+                  <a href="#">read more →</a>
+                </div>
+                <div class="service-item">
+                  <img src="four.jpg" alt="Service 4">
+                  <h3>Customs Brokerage</h3>
+                  <p>We handle all customs regulations and paperwork, ensuring smooth customs clearance and compliance for your international shipments.</p>
+                  <a href="#">read more →</a>
+                </div>
+                <div class="service-item">
+                  <img src="five.jpg" alt="Service 5">
+                  <h3>Warehousing Solutions</h3>
+                  <p>Our flexible warehousing solutions offer secure storage, inventory management, and order fulfillment services tailored to your business needs.</p>
+                  <a href="#">read more →</a>
+                </div>
+                <div class="service-item">
+                  <img src="six.jpg" alt="Service 6">
+                  <h3>Last Mile Delivery</h3>
+                  <p>Efficient last mile delivery services ensure your products reach their final destination quickly and reliably, enhancing customer satisfaction.</p>
+                  <a href="#">read more →</a>
+                </div>
+                <div class="service-item">
+                  <img src="seven.jpg" alt="Service 7">
+                  <h3>Logistics Consulting</h3>
+                  <p>Our expert logistics consulting services help you optimize your logistics operations, providing insights and strategies for improved efficiency and cost savings.</p>
+                  <a href="#">read more →</a>
+                </div>
+              </div>
+              
+            </div>
+    
+            <button class="slider-btn next-btn">&#10095;</button> <!-- Next Button -->
+        </div>
+    </section>
+    
+    <section class="contact">
+        <div class="contact-image">
+            <img src="banner.jpg" alt="Contact Image">
+        </div>
+        <div class="contact-overlay"></div>
+        <div class="contact-content">
+            <h1>Reach your destination 100% sure and safe</h1>
+            <p>We will take care of your cargo or your passenger and deliver them safe and on time!</p>
+            <button><a href="#">Contact us</a></button>
+        </div>
+    </section>
+    <section class="map">
+        <h1>Reaching You, Wherever You Are.</h1>
+        <div id="map" style="width: 100%; height: 450px;"></div>
+</section>
+<section class="end">
+    <footer>
+        <p>Have questions? Call us at 000-800-123-4567</p>
+        <p>
+            <a href="#">About Us</a> | <a href="#">Shipping Services</a> | <a href="#">Tracking</a> | <a href="#">Logistics Solutions</a> | 
+            <a href="#">Customer Support</a> | <a href="#">Careers</a> | <a href="#">Newsroom</a>
+        </p>
+        <p>
+            <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> | <a href="#">Cookie Preferences</a> | 
+            <a href="#">Corporate Information</a> | <a href="#">Contact Us</a> | <a href="#">Sitemap</a>
+        </p>
+        <p>
+            <a href="#">Partners</a> | <a href="#">Affiliates</a> | <a href="#">Shipping Calculator</a> | <a href="#">Global Network</a>
+        </p>
+        <p>Infinite Freights, Infinite Ways.</p>
+    </footer>
+    
+      
+      
+</section>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxfWJ-V2Q4Dw38pdJrzXQZQDWP6xE5EGo&callback=initMap" async defer></script>
+        <script>
+function initMap() {
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 2,
+        center: { lat: 0, lng: 0 },
+        mapTypeId: 'terrain' 
+    });
+
+    
+    const customIcon = {
+        url: "cargo-ship.png", // Path to your custom icon
+        scaledSize: new google.maps.Size(40, 40),
+    };
+
+    const marker = new google.maps.Marker({
+        position: { lat: 0, lng: 0 }, 
+        map: map,
+        title: "Revolving Object",
+        icon: customIcon 
+    });
+
+ 
+    const path = [
+        { lat: 0, lng: 0 }, 
+        { lat: 10, lng: 10 },
+        { lat: 20, lng: 30 },
+        { lat: 30, lng: 70 }, 
+        { lat: 40, lng: 120 }, 
+        { lat: 50, lng: 150 }, 
+        { lat: -10, lng: -140 },
+        { lat: -20, lng: -100 },
+        { lat: -30, lng: -60 },
+        { lat: 0, lng: -30 }, 
+        { lat: 20, lng: -90 }, 
+        { lat: 40, lng: -70 }, 
+        { lat: 60, lng: -10 }, 
+        { lat: 70, lng: 30 }, 
+        { lat: 80, lng: 60 }, 
+        { lat: 60, lng: 100 },
+        { lat: 30, lng: 120 }, 
+        { lat: 0, lng: 0 } 
+    ];
+
+    let index = 0;
+
+    
+    function moveMarker() {
+        marker.setPosition(path[index]);
+        index = (index + 1) % path.length;
+        setTimeout(moveMarker, 1000); 
+    }
+
+    moveMarker();
+}
+</script>
+        
+    
+</body>
+</html>
